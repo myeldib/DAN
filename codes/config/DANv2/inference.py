@@ -54,5 +54,5 @@ for inx, path in tqdm(enumerate(test_files)):
     sr = model.fake_SR.detach().float().cpu()[0]
     sr_im = util.tensor2img(sr)
 
-    save_path = osp.join(args.output_dir, "{}_x{}.jpg".format(name, opt["scale"]))
+    save_path = osp.join(args.output_dir, "{}_x{}.png".format(name, opt["scale"]))
     cv2.imwrite(save_path, sr_im)
