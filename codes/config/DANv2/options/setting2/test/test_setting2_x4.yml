@@ -27,4 +27,4 @@ network_G:
 
 #### path
 path:
-  pretrain_model_G: ../../../checkpoints/DANv2/danv2_x4_setting2.pth
+  pretrain_model_G: ../../../models/DANv2/danv2_x4_setting2.pth
