@@ -40,7 +40,7 @@ model = create_model(opt)
 if not osp.exists(args.output_dir):
     os.makedirs(args.output_dir)
 
-test_files = glob(osp.join(args.input_dir, "*png"))
+test_files = glob(osp.join(args.input_dir, "*jpg"))
 for inx, path in tqdm(enumerate(test_files)):
     name = path.split("/")[-1].split(".")[0]
 
